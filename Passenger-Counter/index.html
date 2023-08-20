@@ -1,10 +1,40 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1>People entered:</h1>
-        <h2 id="count-el">0</h2>
-        <script></script>
-    </body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee&family=Work+Sans:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="transbox">
+        <div class="hero">
+            <h1 id="name">XANADU</h1>
+            <h1>ROLLER RINK</h1>
+            <!-- <h2>Open Skate Nite</h2> -->
+            <h2>OPEN SKATE NITE</h2>
+        </div>
+        <div class="middle">
+            <!-- <h3>ATTENDANCE BY HOUR:</h3> -->
+            <h3>Attendance by Hour:</h3>
+            <p id="count-el" class="digits">0</p>
+            <div class="div-butt">
+                <button id="increment-btn" onclick="increment()">ADD</button>
+                <button id="save-btn" onclick="save()">SAVE</button>
+            </div>
+            <h3>
+                Previous entries:<br>
+                <span id="save-el"> </span>
+            </h3>
+            </h3>
+        </div>
+    </div></div>
+    <script src="index.js"></script>
+</body>
+
 </html>
