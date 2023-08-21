@@ -21,7 +21,7 @@ I know there's a right way to set this, but it'll have to come later. */
 
 h1 {
   font-family: 'Audiowide', cursive;
-  font-size: 50px;
+  font-size: 42px;
   line-height: 1.05;
   color: #00a3a3;
   margin-top: -5px;
@@ -40,8 +40,8 @@ h1 {
     2px -2px 20px #a30000,
     -2px 2px 20px #a30000,
     2px 2px 20px #a30000;
-  margin-top: 0;
-  margin-bottom: -8px;
+  margin-top: -10px;
+  margin-bottom: -5px;
 }
 
 h2,
@@ -58,7 +58,7 @@ h4 {
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 38px;
   line-height: 1.0;
   color: #a30000;
   margin-top: 15px;
@@ -67,70 +67,69 @@ h2 {
 
 h3 {
   color: #00a3a3;
-  font-size: 45px;
+  font-size: 34px;
   line-height: 1.0;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 
 h4 {
   color: #a30000;
-  font-size: 40px;
-  margin-top: 10px;
+  font-size: 28px;
+  margin-top: 6px;
 }
 
-h4.skater-tracker {
-  color: #00a3a3;
-}
+
 
 div.previous-entries {
   margin-top: 30px;
 }
 
 .previous-entries h3 {
+  color: #a30000;
   margin-top: 10px;
 }
 
-.previous-entties h4 {
-  color: #a30000;
+.previous-entries h4 {
+  line-height: 1.3;
+  font-weight: 500;
 }
 
 .digits {
   font-family: 'Work Sans', 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
-  font-size: 75px;
+  font-size: 65px;
   font-weight: 800;
   color: #e4d8cd;
-  opacity: .85;
   text-shadow:
-    -1px -1px 1px #111,
-    -1px 1px 1px #111,
-    1px -1px 1px #111,
-    1px 1px 1px #111;
-  margin-top: 0;
+    -2px -2px 1px #00a3a3,
+    -2px 2px 1px #00a3a3,
+    2px -2px 1px #00a3a3,
+    2px 2px 1px #00a3a3;
+  margin-top: 5px;
   margin-bottom: 0;
 }
 
 div.div-butt {
-  margin: 18px auto 30px auto;
+  margin: 12px auto 30px auto;
 }
 
 button {
-  background: #a30000;
+  background: #00a3a3;
   color: #e4d8cd;
   font-weight: 600;
   font-family: inherit;
-  font-size: 30px;
+  font-size: 28px;
   text-shadow:
     -1px -1px 1px #111,
     1px -1px 1px #111,
     -1px 1px 1px #111,
     1px 1px 1px #111;
   width: 120px;
-  height: 45px;
-  border-radius: 5px;
+  height: 50px;
+  border-radius: 10px;
   border: 1px solid black;
   box-shadow: 2px 2px #555;
-  margin: 0 2%;
+  margin: 0 1.5%;
 }
 
 hr {
