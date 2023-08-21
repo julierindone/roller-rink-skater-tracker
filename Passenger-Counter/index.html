@@ -4,25 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>Roller-Rink Skater Tracker</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="">
-</head>
 
-<body>
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-  <script src="" async defer></script>
-</body>
-
-</html>
-<html>
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Work+Sans:wght@500;600;700;800;900&display=swap"
@@ -35,25 +20,23 @@
     <div class="hero">
       <h1 id="name">XANADU</h1>
       <h1>ROLLER RINK</h1>
-    </div>
-    <!-- TODO: Might be cool to do "Attendance by hour" and the number side by side with flexbox or grid. 
-      Can I make flexbox move one box to the next line if needed, or is that only grid? -->
-    <div class="middle">
+      <!-- TODO: Might be cool to do "Attendance by hour" and the number side by side with flexbox or grid. 
+        Can I make flexbox move one box to the next line if needed, or is that only grid? -->
       <h2>OPEN SKATE NITE</h2>
       <h4 class="skater-tracker">SKATER TRACKER</h4>
-      <hr>
+    </div>
+    <hr>
+    <div class="middle">
       <h3>ADMISSIONS PER HOUR:</h3>
       <p id="count-el" class="digits">0</p>
       <div class="div-butt">
         <button id="increment-btn" onclick="increment()">ADD</button>
         <button id="save-btn" onclick="save()">SAVE</button>
       </div>
-      <hr class="long-line">
+      <hr>
       <div class="previous-entries">
         <h3>PREVIOUS ENTRIES:</h3>
-        <h4 class="previous-entries"><span id="save-el">
-            <h4> </h4>
-          </span></h4>
+        <h4 id="save-el"> </h4>
       </div>
     </div>
   </div>
