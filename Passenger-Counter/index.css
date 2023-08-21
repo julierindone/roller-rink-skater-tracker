@@ -1,119 +1,145 @@
+/* TODO: I really went overboard with the colors, and the readability isn't great even after lightening the background image. 
+I need to find ways to incorporate the red and teal without using them directly for so much of the text.
+// Even less switching back and forth would be better.
+ */
+
 body {
-    font-family: 'Work Sans', Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    margin: 0;
+  font-family: 'Work Sans', 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+  text-align: center;
+  margin: 0;
 }
 
-p {
-    margin: 5px;
-}
-
+/* padding-bottom is set really big because if I didn't, the repeats stopped before the end of the phone screens. 
+I know there's a right way to set this, but it'll have to come later. */
 .background {
-    background-image: url("images/skates_straightened_brightened.jpg");
-    background-size: contain;
-    background-repeat: repeat;
-    padding: 5% 10px 100% 10px;
-    background-position: center top;
+  background-image: url("images/skates_50percent.png");
+  background-size: contain;
+  background-repeat: repeat;
+  padding: 5% 10px 200% 10px;
+  background-position: center top;
 }
 
 h1 {
-    font-family: 'Audiowide', cursive;
-    font-size: 40px;
-    color: #00cccc;
-    /* text-shadow: 0px 0px 3px #cc0000; */
-    margin-top: 2px;
-    margin-bottom: 10px;
-    /* color: white; */
-    text-shadow:
-        -1px -1px 0px #000,
-        1px -1px 0px #000,
-        -1px 1px 0px #000,
-        1px 1px 0px #000;
+  font-family: 'Audiowide', cursive;
+  font-size: 50px;
+  line-height: 1.05;
+  color: #00a3a3;
+  margin-top: -5px;
+  margin-bottom: 0;
+  text-shadow:
+    -1px -1px 0 #a30000,
+    1px -1px 0 #a30000,
+    -1px 1px 0 #a30000,
+    1px 1px 0 #a30000;
 }
 
 #name {
-    font-size: 60px;
-    text-shadow:
-        -2px -2px 10px #cc0000,
-        2px -2px 10px #cc0000,
-        -2px 2px 10px #cc0000,
-        2px 2px 10px #cc0000;
-    margin-bottom: -8px;
+  font-size: 65px;
+  text-shadow:
+    -2px -2px 20px #a30000,
+    2px -2px 20px #a30000,
+    -2px 2px 20px #a30000,
+    2px 2px 20px #a30000;
+  margin-top: 0;
+  margin-bottom: -8px;
 }
 
 h2,
-h3 {
-    font-weight: 700;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-shadow:
-        -1px -1px 1px #000,
-        1px -1px 1px #000,
-        -1px 1px 1px #000,
-        1px 1px 1px #000;
+h3,
+h4 {
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-shadow:
+    -1px -1px 1px #111,
+    1px -1px 1px #111,
+    -1px 1px 1px #111,
+    1px 1px 1px #111;
 }
 
 h2 {
-    font-size: 35px;
-    color: #cc0000;
-}
-h3 {
-    color:#00cccc;
-    font-size: 27px;
-    line-height: 1.3;
-    /* margin-top: 0; */
+  font-size: 45px;
+  line-height: 1.0;
+  color: #a30000;
+  margin-top: 15px;
+  margin-bottom: -5px;
 }
 
-/* .transbox {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    background: rgba(0, 0, 0, 0.1);
-    padding:0;
-    margin: 20px auto;
-} */
+h3 {
+  color: #00a3a3;
+  font-size: 45px;
+  line-height: 1.0;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+h4 {
+  color: #a30000;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+h4.skater-tracker {
+  color: #00a3a3;
+}
+
+div.previous-entries {
+  margin-top: 30px;
+}
+
+.previous-entries h3 {
+  margin-top: 10px;
+}
+
+.previous-entties h4 {
+  color: #a30000;
+}
 
 .digits {
-    font-family: 'Work Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 70px;
-    font-weight: bold;
-    color: #00cccc;
-    text-shadow:
-        -1px -1px 1px #000,
-        1px -1px 1px #000,
-        -1px 1px 1px #000,
-        1px 1px 1px #000;
-    /* margin-top: -5px */
+  font-family: 'Work Sans', 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-size: 75px;
+  font-weight: 800;
+  color: #e4d8cd;
+  opacity: .85;
+  text-shadow:
+    -1px -1px 1px #111,
+    -1px 1px 1px #111,
+    1px -1px 1px #111,
+    1px 1px 1px #111;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-div.butt {
-    margin: 5px auto;
+div.div-butt {
+  margin: 18px auto 30px auto;
 }
 
 button {
-    background: #cc0000;
-    color: aliceblue;
-    font-family: inherit;
-    font-size: 22px;
-    text-shadow:
-    -1px -1px 1px #000,
-    1px -1px 1px #000,
-    -1px 1px 1px #000,
-    1px 1px 1px #000;
-
-    width: 120px;
-    height: 35px;
-    border-radius: 5px;
-    border: 1px solid black;
-    box-shadow: 2px 2px #555;
-    margin: 0px 2%;
+  background: #a30000;
+  color: #e4d8cd;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 30px;
+  text-shadow:
+    -1px -1px 1px #111,
+    1px -1px 1px #111,
+    -1px 1px 1px #111,
+    1px 1px 1px #111;
+  width: 120px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 2px 2px #555;
+  margin: 0 2%;
 }
 
-#increment-btn {
-    /* background: #cc0000; */
-}
-
-#save-btn {
-    /* background: #00cccc; */
+hr {
+  margin-top: 15px;
+  width: 50%;
+  max-width: 300px;
+  height: 3px;
+  border-top: 4px solid #00a3a3;
+  border-bottom: 3px solid #a30000;
+  border-right: none;
+  border-left: none;
 }
